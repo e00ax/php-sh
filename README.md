@@ -10,7 +10,7 @@ This smarthome needs a very specific enviroment, sorry if it doesn't match yours
 - Pigpiod must be running.
 - Pi (or zero pi) with a lamp enviroment and a relais card for the door.
 - Pi (or zero pi) with a lamp enviroment and a relais card for the Atmotec gas boiler.
-- A blank laravel project (everything else doesn't make sense)
+- A blank laravel project (anything else doesn't make sense)
 
 > Of course everything must be setup and ready!
 
