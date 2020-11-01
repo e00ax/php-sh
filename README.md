@@ -7,6 +7,7 @@ This smarthome needs a very specific enviroment, sorry if it doesn't match yours
 - Philips Hue developer id and token for the bridge.
 - Nuki lock (or more) + bridge.
 - Nuki id and developer token.
+- Pigpiod must be running.
 - Pi (or zero pi) with a lamp enviroment and a relais card for the door.
 - Pi (or zero pi) with a lamp enviroment and a relais card for the Atmotec gas boiler.
 - A blank laravel project (everything else doesn't make sense)
