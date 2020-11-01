@@ -1,0 +1,149 @@
+/*
+ * Layout
+ */
+.bodyBox {
+	display: flex;
+  	flex-direction: column;
+}
+
+/* Mobile */
+.topHeader { width: 100%; }
+.quicksetHeader { width: 100%; }
+.shModal { width: 80%; }
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+	.bodyBox { flex-direction: row; }
+	.topHeader { width: 910px; }
+	.quicksetHeaderFlex { margin-left: 10px; }
+	.quicksetHeader { width: 450px; }
+	.shModal { width: 500px; }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color:#fff;
+}
+
+.rowbox {
+	display: flex;
+  	flex-direction: row;
+}
+
+.colbox {
+	display: flex;
+  	flex-direction: column;	
+}
+
+.box {
+	text-align:center;
+ 	background: #222;
+ 	margin-top:10px;
+}
+
+.headbox {
+	width:100%;
+  	height:25px;
+  	padding:3px 0;
+  	background:#181a20;
+ 	border-bottom:1px solid #000000;
+ 	text-align:center;
+}
+   
+.contbox {
+	width: 100%;
+	color: #c08a20;
+ 	text-align:center;
+}
+
+.logbox {
+	width: 100%;
+	color: #646464;
+ 	text-align:left;
+}
+
+.sel {
+	background:#eeeded;
+	text-align-last:center;
+	border:1px solid #646464;
+}
+
+.overflow {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+
+
+/*
+ * Fonts
+ */
+.headline {
+	color: #a5a4a4;
+  	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.numbig {
+	color: #c08a20;
+  	font: bold 24px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.numsmall {
+	color: #c08a20;
+  	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.subtext {
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+  	color: #a5a4a4;
+}
+
+.forms {
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+  	color: #a5a4a4;
+}
+
+.foundation {
+	font: bold 14px Courier, Verdana, Arial, Helvetica, sans-serif;
+  	color: #262e6d;
+}
+
+.foundationWhite {
+	font: bold 14px Courier, Verdana, Arial, Helvetica, sans-serif;
+  	color: #fefefe;
+}
+
+.headlineTable {
+	color: #333;
+  	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/*
+ * Pagination
+ */
+.paginationOn {
+	padding: 10px 10px;
+  	text-decoration: none;
+	background-color: #4CAF50;
+  	color: white;
+	
+}
+
+.paginationOff {
+	padding: 10px 10px;
+  	text-decoration: none;
+	background-color: #fff;
+  	color: #626462;
+	
+}
+
+.paginationOn:hover {
+	background-color: #ddd;
+}
+
+.paginationOff:hover {
+	background-color: #ddd;
+}

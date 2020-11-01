@@ -1,0 +1,19 @@
+{
+    "name": "e00ax/php-sh",
+    "description": "Minimalistic Laravel smarthome",
+    "authors": [
+        {
+            "name": "Christian Rickert",
+            "email": "chrickert@web.de"
+        }
+    ],
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "volantus/php-pigpio": "^0.3.0"
+    },
+    
+    "autoload": {
+        "psr-4": {"E00ax\\Sh\\": "src/"}
+    }
+}

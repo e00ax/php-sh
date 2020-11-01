@@ -1,0 +1,170 @@
+/* 
+ * The side navigation menu 
+ */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Stay on top */
+    top: 38px; /* Stay at the top */
+    left: 0;
+    background-color: #222; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    padding-bottom: 100px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/*
+ * Accordion (Navi)
+ */
+ .accordionNavi {
+	background-color: #222;
+	/*color: #c08a20;*/
+	/*cursor: pointer;*/
+	/*padding: 18px;*/
+	margin-top: 10px;
+	/*width: 100%;*/
+	border: none;
+	text-align: center;
+	/*outline: none;*/
+	/*font-size: 15px;*/
+	transition: 0.2s;
+}
+
+.active, .accordionNavi:hover {
+  	background-color: #ccc;
+}
+
+.accordionPanel {
+	background-color: #222;
+	color: #ddd;
+	/*margin-top: 10px;*/
+	height: 0;
+	overflow: hidden;
+	transition: height 0.2s ease-out;
+}
+
+.acc {
+	text-align: left;
+	background: #222;
+}
+
+.acc:hover {
+	background: #222;
+}
+
+.acc:active {
+	background: #222;
+}
+
+
+/* 
+ * Menu Header
+ */
+.col-6 {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+header {
+    max-width: 1920px;
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: #333;
+    height: 38px;
+    overflow: hidden;
+    transition: all 350ms ease-in;
+}
+header.black {
+    background-color: #151515;
+    height: 500px;
+}
+header .logo {
+    padding: 6px;
+}
+header .logo img {
+    max-width: 15.67px;
+}
+header .container {
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1190px;
+}
+header .menu {
+    position: relative;
+    padding: 5px 15px 0;
+    float: left;
+}
+header .menu a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    background-color: transparent;
+}
+header .menu a span {
+    width: 100%;
+    position: absolute;
+    text-indent: -9999em;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+header .menu a span:before, header .menu a span:after {
+    content: '';
+    height: 1px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+header .menu a span:after {
+    top: 6px;
+}
+header .menu a.active span {
+    background-color: transparent;
+}
+header .menu a.active span:before {
+    transform: translateY(4px) translateX(1px) rotate(180deg);
+}
+header .menu a.active span:after {
+    transform: translateY(-2px) translateX(1px) rotate(-180deg);
+}
